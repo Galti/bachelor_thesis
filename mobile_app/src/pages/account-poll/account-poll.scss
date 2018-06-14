@@ -1,0 +1,21 @@
+page-account-poll {
+  #logo {
+    margin-top: 50px;
+  }
+
+  .buttons {
+    font-size: 18px;
+    padding: 24px 0;
+    margin: 0 auto;
+    width: 82%;
+  }
+
+  #create_account {
+    margin-top: 100px;
+    background-color: map_get($colors, secondary);
+  }
+
+  #log_in {
+    margin-top: 30px;
+  }
+}

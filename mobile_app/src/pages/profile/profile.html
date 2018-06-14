@@ -1,0 +1,21 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div id="content">
+    <h1 id="balance">~{{balance}} ETH</h1>
+    <div class="key_val">
+      <span class="key">My Address:</span>
+      <span class="val">{{address}}</span>
+    </div>
+    <button ion-button block id="logout" (click)="onLogOutPress()">Log Out</button>
+  </div>
+
+</ion-content>

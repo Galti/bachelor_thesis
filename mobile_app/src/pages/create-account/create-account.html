@@ -1,0 +1,17 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Registration</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h5 ion-text color="primary">Please carefully write down this phrase.</h5>
+  <ion-card>
+    <ion-card-content>{{mnemonic}}</ion-card-content>
+  </ion-card>
+
+  <button ion-button block id="go_to_game_button" (click)="onGoToGamePress()">Go to Game</button>
+</ion-content>

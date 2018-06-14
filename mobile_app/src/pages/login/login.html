@@ -1,0 +1,16 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-textarea placeholder="Write your back up phrase to log in" [(ngModel)]="mnemonic"></ion-textarea>
+  </ion-card>
+  <button ion-button block id="go_to_game_button" (click)="onGoToGamePress()">Go to Game</button>
+</ion-content>

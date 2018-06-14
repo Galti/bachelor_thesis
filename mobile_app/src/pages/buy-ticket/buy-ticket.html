@@ -1,0 +1,36 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Buy a Ticket</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <div id="content">
+    <div id="background-image"></div>
+
+    <div id="text_container">
+      <h1 ion-text>The Lucky One</h1>
+      <span>PRIZE: 1 ETH</span>
+      <ol>
+        <li>You buy a ticket</li>
+        <li>Wait until all the tickets are sold</li>
+        <li>Then drawing begins and a random buyer wins</li>
+      </ol>
+
+    </div>
+    <div id="eth_logo">
+      <img src="assets/imgs/eth_logo.png" />
+    </div>
+    <div id="tickets_left">
+      <span>- {{ticketsCount}} -</span>
+      TICKETS LEFT
+    </div>
+    <button ion-button block id="buy1" (click)="onBuyPress()">+ BUY</button>
+  </div>
+
+</ion-content>

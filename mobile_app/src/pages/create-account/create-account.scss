@@ -1,0 +1,16 @@
+page-create-account {
+  #go_to_game_button {
+    width: 180px;
+    margin: 0 auto;
+    margin-top: 60px;
+    background-color: map_get($colors, positiveGreen);
+  }
+
+  h5 {
+    margin: 25px 10px;
+  }
+
+  ion-title {
+    color: red !important;
+  }
+}

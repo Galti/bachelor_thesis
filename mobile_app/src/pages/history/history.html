@@ -1,0 +1,26 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>History</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="ticket" *ngIf="isIncludedInGame">
+    <span class="luck pending">Pending</span>
+    <span class="id">Game Number: {{currentGameId}}</span>
+    <span class="revealed_number" *ngIf="revealedNumber">My Number: {{revealedNumber}}</span>
+    <span id="current_game_status">STATUS: {{isTicketsSoldOut && !isRevelationEnded ? 'revelation' : 'selling tickets'}}</span>
+    <img src="assets/imgs/ticket_form.png" />
+  </div>
+
+  <div class="ticket" *ngFor="let story of history">
+    <span class="luck" [ngClass]="{'lucky': story.won, 'unlucky': !story.won}"> {{story.won ? 'Lucky' : 'Unlucky'}}</span>
+    <span [ngClass]="{'other_winner': !story.won, 'winner_is_me': story.won}">WINNER: {{story.winner}}</span>
+    <span class="id">Game Number: {{story.gameId}}</span>
+    <img src="assets/imgs/ticket_form.png" />
+  </div>
+</ion-content>

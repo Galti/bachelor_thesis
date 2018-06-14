@@ -1,0 +1,75 @@
+page-history {
+  .ticket {
+    img {
+      height: 120px;
+      width: 100%;
+    }
+
+    .luck {
+      font-weight: bold;
+      font-size: 35px;
+      position: absolute;
+      z-index: 1;
+      margin: 20px 0 0 40px;
+    }
+
+    .pending {
+      color: map_get($colors, secondary);
+    }
+
+    .lucky {
+      color: map_get($colors, positiveGreen)
+    }
+
+    .unlucky {
+      color: map_get($colors, textHighlighted)
+    }
+
+    .id {
+      position: absolute;
+      right: 10px;
+      margin-top: 100px;
+      font-weight: bold;
+      color: map_get($colors, textHighlighted);
+    }
+
+    .no_data {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .other_winner {
+      position: absolute;
+      margin-top: 65px;
+      text-align: center;
+      width: 100%;
+      color: map_get($colors, secondary);
+    }
+
+    .winner_is_me {
+      display: none;
+    }
+
+    .revealed_number {
+      font-weight: bold;
+      position: absolute;
+      right: 10px;
+      margin-top: 20px;
+      color: map_get($colors, textHighlighted);
+    }
+
+    #current_game_status {
+      position: absolute;
+      margin: 65px 0 0 40px;
+      width: 100%;
+      color: map_get($colors, secondary);
+    }
+
+    margin-top: 5px;
+  }
+
+
+}
